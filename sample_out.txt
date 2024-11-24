@@ -1,0 +1,45 @@
+Secrets Management Menu:
+1. Create a secret
+2. Get secret by domain
+3. Show all secrets
+4. Show all domains
+5. Delete secret by domain
+6. Rotate secret by domain
+7. Check and rotate expired secrets
+8. Export all secrets (unciphered)
+X|x. Exit
+Do you want to access your secrets? (Y/N): y
+Enter your password: ··········
+Invalid password. Try again.
+Enter your password: ··········
+Enter your choice: 1
+Enter domain name for the secret: u@u.com
+Generate random secret? (Y/N): y
+Enter the number of bytes for the random secret: 20
+Does this secret have an expiry? (Y/N): y
+Enter expiry duration in days: 1
+Secret for u@u.com created successfully.
+Enter your choice: 1
+Enter domain name for the secret: u@g.com
+Generate random secret? (Y/N): y
+Enter the number of bytes for the random secret: 10
+Does this secret have an expiry? (Y/N): y
+Enter expiry duration in days: 1
+Secret for u@g.com created successfully.
+Enter your choice: 3
+Domain: u@u.com
+Secret: 30ba402ed9fbbc520f044387649a8f4a0e2894fc
+Start Time: 2024-10-28T16:38:52.455514
+End Time: 2024-10-29T16:38:59.551244
+
+Domain: u@g.com
+Secret: 2390c55c02b798c99828
+Start Time: 2024-10-28T16:39:55.382184
+End Time: 2024-10-29T16:39:58.223293
+
+Enter your choice: 8
+WARNING: This will export all secrets to an unencrypted JSON file.
+Are you sure you want to proceed? (Y/N): y
+Secrets have been exported to ./sample_data/secrets/secrets_unencrypted.json as plain text.
+Enter your choice: x
+Exiting...
